@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CarCard from '../../components/Card/ACard';
 import LogoCard from '../../components/Card/LogoCard';
 import { carData, companyBrands, whyChooseUs } from './constants/cars';
 import WhyChooseUs from './components/WhyChoose';
 import styled from 'styled-components';
+import axios from 'axios';
 
 const Container = styled('div')``;
 const FirstContent = styled('div')`
@@ -70,9 +71,15 @@ const ShowMoreButton = styled('button')`
 
 const Homepage = () => {
   const [displayedCars, setDisplayedCars] = useState(5);
+  const [cars, setCars] = useState([]);
   const bestCarIndex = Math.floor(Math.random() * carData.length);
   const bestCar = carData[bestCarIndex];
 
+  useEffect(() => {
+    axios.get('https://humoyun-website-backend.netlify.app/cars/get_all').then((data) => {
+      setCars(data.data);
+    });
+  }, []);
   const showMoreCars = () => {
     setDisplayedCars((prev) => prev + 5); // Increase the number of displayed cars
   };
@@ -93,11 +100,11 @@ const Homepage = () => {
         <WhyChooseUs whyChooseUs={whyChooseUs} />
       </ThirdContent>
       <FourthContent>
-        {carData.slice(0, displayedCars).map((car) => {
+        {cars.slice(0, displayedCars).map((car) => {
           return <CarCard key={car.model} car={car} />;
         })}
         <ShowMoreContainer>
-          {displayedCars < carData.length && (
+          {displayedCars < cars.length && (
             <ShowMoreButton onClick={showMoreCars}>Show More</ShowMoreButton>
           )}
         </ShowMoreContainer>
