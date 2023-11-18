@@ -28,13 +28,11 @@ const AboutUs = () => {
     <AboutUsContainer>
       <AboutUsTitle>About Us</AboutUsTitle>
       <AboutUsImage
-        src="https://www.ddongauto.com/wp-content/uploads/2023/09/dalou.jpg"
+        src="https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2019/09/register-company-online.png"
         alt="About Us"
       />
       <AboutUsContent>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien eu nisl commodo,
-        sed fermentum turpis ultricies. Fusce et turpis eget quam interdum sodales. In hac habitasse
-        platea dictumst.
+       
       </AboutUsContent>
       {/* Add more content as needed */}
     </AboutUsContainer>

@@ -5,8 +5,8 @@ const RootsContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 40px; /* Increased padding */
-  background-color: #4b0082; /* Dark purple color */
-  color: white;
+  background-color: #ece9e9; /* Dark purple color */
+  color: #4e4d4d;
 `;
 
 const TextContainer = styled.div`
@@ -35,7 +35,7 @@ const Roots = () => {
   return (
     <RootsContainer>
       <RootsImage
-        src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14143415.jpg" // Replace with the actual image URL
+        src="https://www.infotrack.co.uk/media/keegy510/hero-2-company-search.png?height=457&width=840&quality=&mode=Crop&center=0.41647855530474043,0&bgcolor=transparent" // Replace with the actual image URL
         alt="Roots Image"
       />
       <TextContainer>
