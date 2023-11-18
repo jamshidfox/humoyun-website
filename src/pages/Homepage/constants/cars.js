@@ -2,115 +2,100 @@
 
 export const carData = [
   {
-    model: 'Honda Civic1',
+    model: 'Toyota Civic',
     picture:
       'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Toyota Civic is known for its sporty design, fuel efficiency, and innovative technology.',
+    engine: '2.0L 300hp',
   },
   {
-    model: 'Honda Civic2',
-    picture: 'https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1666008987698.jpg',
+    model: 'Honda NSX',
+    picture: 'https://www.autocar.co.uk/sites/autocar.co.uk/files/honda-nsx_2.jpg',
+    blurb:
+      'The Honda NSX, marketed in North America as the Acura NSX, is a two-seater, mid-engined coupe[1] sports car manufactured by Honda.',
+    engine: '5.0L 590hp',
+  },
+  {
+    model: 'Bugatti Chiron',
+    picture: 'https://s0.rbk.ru/v6_top_pics/media/img/4/58/756421770175584.jpg',
     blurb:
       'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+    engine: '5.0L W16',
   },
   {
-    model: 'Honda Civic3',
-    picture: 'https://www.motortrend.com/uploads/2022/08/2022-Bugatti-Chiron-Super-Sport-2-1.jpg',
-    blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
-  },
-  {
-    model: 'Honda Civic4',
+    model: 'Audi RS 6',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://avatars.mds.yandex.net/get-verba/1535139/2a0000016e6f6e476eb24bffe8980ddc7534/cattouchret',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      '"Premium" unleaded will reduce the engine power output, and have logical reduction in performance.',
+    engine: '5.0L 1250hp',
   },
   {
-    model: 'Honda Civic5',
+    model: 'Porsche GT3 RS',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2022/Products/911-GT3-RS-Premiere/_BKOS6959_edit_V02_highres.jpeg/jcr:content/_BKOS6959_edit_V02_highres.jpeg',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Porsche 911 GT3 is a high-performance homologation model of the Porsche 911 sports car.',
+    engine: '4.0L 525hp',
   },
   {
-    model: 'Honda Civic6',
+    model: 'Mercedes Benz CLS63',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://photos-kl.kcdn.kz/webp/9c/9cb283e4-cb90-4205-9931-9a604fc4e0db/3-440x330.webp',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Mercedes-Benz CLS is a series of executive cars produced by Mercedes-Benz from 2004 to August 2023.',
+    engine: '4.0L 650hp',
   },
   {
-    model: 'Honda Civic7',
+    model: 'BMW M5 F90',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://www.exhaustnotes.com.au/wp-content/uploads/2021/05/IMG_4810.jpg',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The BMW M5 is a high performance variant of the BMW 5 Series marketed under the BMW M sub-brand. It is considered an iconic vehicle in the sports sedan category.',
+    engine: '8.0L 1200hp',
   },
   {
-    model: 'Honda Civic8',
+    model: 'Lamborghini Revuelto',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://media.wired.com/photos/6423826d7f6ce88e606d7b55/16:9/w_1900,h_1069,c_limit/Lamborghini-Revuelto-Featured-Gear.jpg',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Lamborghini Revuelto (Spanish pronunciation: [reˈβwelto]) is a mid-engine plug-in hybrid sports car produced by the Italian automobile manufacturer Lamborghini. ',
+    engine: '7.0L 1000hp',
   },
   {
-    model: 'Honda Civic9',
+    model: 'Ford Mustang ',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://i.insider.com/5e9a0cafdcd88c113f7c08b0?width=700',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. ',
+    engine: '6.0L 700hp',
   },
   {
-    model: 'Honda Civic10',
+    model: 'Chevrolet Camaro',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://image.cnbcfm.com/api/v1/image/105232079-2018-Chevrolet-Camaro-ZL1-033.jpg?v=1679502991&w=720&h=405',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Camaro will be discontinued at the end of the 2024 model year. However, Chevrolet has stated, "This is not the end of Camaro story.',
+    engine: '5.0L 500hp',
   },
   {
-    model: 'Honda Civic11',
+    model: 'Chevrolet Corvette',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://speedme.ru/uploads/images/2023/06/13/corvette.jpg',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Chevrolet Corvette is a line of American two-door, two-seater luxury[1] sports cars, manufactured and marketed by GM, under the Chevrolet marque, since 1953.[',
+    engine: '5.0L 600hp',
   },
   {
-    model: 'Honda Civic12',
+    model: 'Nissan GTR R35',
     picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
+      'https://kolesa-uploads.ru/-/09ac4098-bd46-44c9-80df-b6791ec07079/0-0.jpg',
     blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
+      'The Nissan GTR is a 2+2 seater, front mid-engine, all-wheel drive sports car and grand tourer, developed and produced by Nissan.',
+    engine: '6.0L 950hp',
   },
-  {
-    model: 'Honda Civic13',
-    picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
-    blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
-  },
-  {
-    model: 'Honda Civic14',
-    picture:
-      'https://cache4.pakwheels.com/system/car_generation_pictures/7370/original/Cover.jpg?1677570254',
-    blurb:
-      'The Honda Civic is known for its sporty design, fuel efficiency, and innovative technology.',
-    engine: '2.0L 4-cylinder',
-  },
+
 
   // Add more car objects as needed
 ];
@@ -122,62 +107,36 @@ export const companyBrands = [
     logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2560px-Honda.svg.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bugatti_logo.svg/2560px-Bugatti_logo.svg.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://1000logos.net/wp-content/uploads/2018/02/Porsche-Logo.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2048px-BMW.svg.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://logos-world.net/wp-content/uploads/2021/03/Lamborghini-Logo.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://www.freeiconspng.com/uploads/logo-ford-mustang-png-19.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/ru/7/7f/Chevrolet_new_logo.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://www.carlogos.org/car-logos/chevrolet-corvette-logo-2019.png',
   },
   {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Nissan_logo.png',
   },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
-  {
-    logo: 'https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo.png',
-  },
+  
   // Add more company objects as needed
 ];
 
@@ -201,11 +160,6 @@ export const whyChooseUs = [
     image:
       'https://cdn2.vectorstock.com/i/1000x1000/45/56/15-years-experience-golden-label-with-ribbon-vector-1204556.jpg',
   },
-  {
-    title: 'Professional Service Team',
-    description: 'Our dedicated service team ensures customer satisfaction.',
-    image:
-      'https://cdn2.vectorstock.com/i/1000x1000/45/56/15-years-experience-golden-label-with-ribbon-vector-1204556.jpg',
-  },
+
   // Add more reasons as needed
 ];
