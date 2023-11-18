@@ -1,7 +1,11 @@
 import React from 'react';
-
+import CarSearch from './components/SearchCar';
 const CarsConatiner = () => {
-  return <div>CarsConatiner</div>;
+  return (
+    <div>
+      <CarSearch />
+    </div>
+  );
 };
 
 export default CarsConatiner;
