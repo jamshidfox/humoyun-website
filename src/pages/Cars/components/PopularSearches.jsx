@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'react-feather';
 
 const PopularSearchesContainer = styled.div`
   margin: 3rem 0rem;
-  padding: 0rem 30rem;
+  padding: 3rem 30rem;
   background-color: #f0f0f0; /* Light gray background */
 `;
 

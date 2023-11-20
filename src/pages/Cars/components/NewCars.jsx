@@ -20,6 +20,10 @@ const Card = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.imageUrl})`};
 `;
 
 const CarTitle = styled.h3`
@@ -58,13 +62,13 @@ const NewCars = ({ cars }) => {
       <CardContainer>
         {showAll
           ? cars.map((car) => (
-              <Card key={car.title}>
+              <Card key={car.title} imageUrl={car.picture}>
                 <CarTitle>{car.title}</CarTitle>
                 <CarPrice>${car.price}</CarPrice>
               </Card>
             ))
           : cars.slice(0, 3).map((car) => (
-              <Card key={car.title}>
+              <Card key={car.title} imageUrl={car.picture}>
                 <CarTitle>{car.title}</CarTitle>
                 <CarPrice>${car.price}</CarPrice>
               </Card>
@@ -76,12 +80,42 @@ const NewCars = ({ cars }) => {
 };
 
 const carsData = [
-  { title: 'Audi Q4 e-tron Sportback', price: 58200 },
-  { title: 'Mercedes-Benz EQE 500', price: 85900 },
-  { title: 'Lucid Air', price: 77400 },
-  { title: 'Rivian R1S', price: 78000 },
-  { title: 'Hyundai Kona EV', price: 33550 },
-  { title: 'Ford E-Transit', price: 49995 },
+  {
+    title: 'Audi Q4 e-tron Sportback',
+    price: 58200,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
+  {
+    title: 'Mercedes-Benz EQE 500',
+    price: 85900,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
+  {
+    title: 'Lucid Air',
+    price: 77400,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
+  {
+    title: 'Rivian R1S',
+    price: 78000,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
+  {
+    title: 'Hyundai Kona EV',
+    price: 33550,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
+  {
+    title: 'Ford E-Transit',
+    price: 49995,
+    picture:
+      'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
+  },
 ];
 
 const NewCarsExample = () => <NewCars cars={carsData} />;
