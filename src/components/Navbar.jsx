@@ -60,7 +60,6 @@ const Navbar = () => {
         <StyledLink to="/cars">Cars</StyledLink>
         <StyledLink to="/contact-us">Contact Us</StyledLink>
         <StyledLink to="/news">News</StyledLink>
-        <StyledLink to="/faq-help">FAQ & Help</StyledLink>
         <StyledLink to="/admin">Admin</StyledLink>
       </Nav>
     </NavbarContainer>

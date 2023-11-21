@@ -6,6 +6,8 @@ import Cars from '../pages/Cars/CarsConatiner';
 import Admin from '../pages/Admin';
 import Dashboard from '../pages/AdminDashboard/Dashboard';
 import AddNewCar from '../pages/NewCarAdd';
+import ContactUs from '../pages/Contact/ContactUs';
+import News from '../pages/News/NewsContent';
 
 const RoutesWithSupRoute = () => {
   return (
@@ -16,6 +18,8 @@ const RoutesWithSupRoute = () => {
       <Route path="/admin" element={<Admin />} />
       <Route path="/admin/dashboard" element={<Dashboard />} />
       <Route path="/admin/add/new-car" element={<AddNewCar />} />
+      <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/news" element={<News />} />
     </Routes>
   );
 };
