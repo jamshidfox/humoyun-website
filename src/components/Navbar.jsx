@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Truck } from 'react-feather';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import styled from "styled-components";
+import { Truck } from "react-feather";
+import { Link } from "react-router-dom";
+import CarImage from "./image/Car.png";
 const NavbarContainer = styled.div`
-  background-color: #34495e;
-  padding: 10px;
+  background-color: #0d2137;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,16 +17,16 @@ const CarShopLogo = styled.div`
   color: white;
 `;
 
-const LogoIcon = styled(Truck)`
-  width: 30px;
-  height: 30px;
+const LogoIcon = styled("img")`
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 `;
 
 const LogoText = styled.h1`
   color: white;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif; /* Change to your preferred font */
+  font-size: 22px;
+  font-family: "Roboto", sans-serif; /* Change to your preferred font */
   margin: 0;
 `;
 
@@ -51,8 +51,8 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <CarShopLogo>
-        <LogoIcon />
-        <LogoText>CarShop</LogoText>
+        <LogoIcon src={CarImage} />
+        <LogoText>CoddyCar</LogoText>
       </CarShopLogo>
       <Nav>
         <StyledLink to="/">Home</StyledLink>

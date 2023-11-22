@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import {
   MapPin,
   Phone,
@@ -9,24 +9,40 @@ import {
   Instagram,
   Linkedin,
   Youtube,
-} from 'react-feather';
+} from "react-feather";
 
 const contactData = {
-  address: '123 Main Street, Cityville',
-  phone: '+123 456 7890',
-  email: 'info@example.com',
+  address: "123 Main Street, Cityville",
+  phone: "+123 456 7890",
+  email: "info@example.com",
 };
 
 const socialMediaData = [
-  { platform: 'Facebook', link: 'https://www.facebook.com/example', icon: <Facebook size={50} /> },
-  { platform: 'Twitter', link: 'https://www.twitter.com/example', icon: <Twitter size={50} /> },
   {
-    platform: 'Instagram',
-    link: 'https://www.instagram.com/example',
+    platform: "Facebook",
+    link: "https://www.facebook.com/example",
+    icon: <Facebook size={50} />,
+  },
+  {
+    platform: "Twitter",
+    link: "https://www.twitter.com/example",
+    icon: <Twitter size={50} />,
+  },
+  {
+    platform: "Instagram",
+    link: "https://www.instagram.com/example",
     icon: <Instagram size={50} />,
   },
-  { platform: 'LinkedIn', link: 'https://www.linkedin.com/example', icon: <Linkedin size={50} /> },
-  { platform: 'YouTube', link: 'https://www.youtube.com/example', icon: <Youtube size={50} /> },
+  {
+    platform: "LinkedIn",
+    link: "https://www.linkedin.com/example",
+    icon: <Linkedin size={50} />,
+  },
+  {
+    platform: "YouTube",
+    link: "https://www.youtube.com/example",
+    icon: <Youtube size={50} />,
+  },
 ];
 
 const ContactContainer = styled.div`
@@ -93,7 +109,12 @@ const ContactUs = () => {
 
       <SocialMedia>
         {socialMediaData.map((social) => (
-          <a key={social.platform} href={social.link} target="_blank" rel="noopener noreferrer">
+          <a
+            key={social.platform}
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {social.icon}
             {social.platform}
           </a>

@@ -1,66 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import CarCard from '../../components/Card/ACard';
-import LogoCard from '../../components/Card/LogoCard';
-import { carData, companyBrands, whyChooseUs } from './constants/cars';
-import WhyChooseUs from './components/WhyChoose';
-import styled from 'styled-components';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import CarCard from "../../components/Card/ACard";
+import LogoCard from "../../components/Card/LogoCard";
+import { carData, companyBrands, whyChooseUs } from "./constants/cars";
+import WhyChooseUs from "./components/WhyChoose";
+import styled from "styled-components";
+import axios from "axios";
 
-const Container = styled('div')``;
-const FirstContent = styled('div')`
+const Container = styled("div")``;
+const FirstContent = styled("div")`
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 `;
 
-const SecondContent = styled('div')`
-  flex: 0 1 25%; /* Adjust the width as needed */
+const SecondContent = styled("div")`
+  /* flex: 0 1 25%; Adjust the width as needed */
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0rem;
-  justify-content: space-between;
+  justify-content: center;
 `;
-const ThirdContent = styled('div')`
+const ThirdContent = styled("div")`
   text-align: center;
   padding: 20px;
   background-color: #f0f0f0;
+  border-radius: 14px;
 `;
-const FourthContent = styled('div')`
-  flex: 0 1 25%; /* Adjust the width as needed */
+const FourthContent = styled("div")`
+  /* flex: 0 1 25%; Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+`;
+const FourthContentData = styled("div")`
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0rem;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
-const FourthHeadline = styled('h1')`
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-`;
-
-const BestCarTitle = styled('h2')`
+const BestCarTitle = styled("h2")`
   color: #333;
 `;
 
-const BestCarInfo = styled('p')`
+const BestCarInfo = styled("p")`
   color: #555;
 `;
 
-const BestCarImage = styled('img')`
+const BestCarImage = styled("img")`
   width: 80%; /* Adjust the width as needed */
   max-height: 400px;
   object-fit: cover;
   margin: 20px 0;
+  border-radius: 8px;
 `;
 
-const ShowMoreContainer = styled('div')`
+const ShowMoreContainer = styled("div")`
   text-align: center;
   margin-top: 20px;
 `;
 
-const ShowMoreButton = styled('button')`
+const ShowMoreButton = styled("button")`
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -76,9 +74,11 @@ const Homepage = () => {
   const bestCar = carData[bestCarIndex];
 
   useEffect(() => {
-    axios.get('https://humoyun-website-backend.netlify.app/cars/get_all').then((data) => {
-      setCars(data.data);
-    });
+    axios
+      .get("https://humoyun-website-backend.netlify.app/cars/get_all")
+      .then((data) => {
+        setCars(data.data);
+      });
   }, []);
   const showMoreCars = () => {
     setDisplayedCars((prev) => prev + 5); // Increase the number of displayed cars
@@ -100,9 +100,12 @@ const Homepage = () => {
         <WhyChooseUs whyChooseUs={whyChooseUs} />
       </ThirdContent>
       <FourthContent>
-        {cars.slice(0, displayedCars).map((car) => {
-          return <CarCard key={car.model} car={car} />;
-        })}
+        <FourthContentData>
+          {cars.slice(0, displayedCars).map((car) => {
+            return <CarCard key={car.model} car={car} />;
+          })}
+        </FourthContentData>
+
         <ShowMoreContainer>
           {displayedCars < cars.length && (
             <ShowMoreButton onClick={showMoreCars}>Show More</ShowMoreButton>

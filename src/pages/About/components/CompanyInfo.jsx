@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const CompanyInfoContainer = styled.div`
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: auto;
   margin-top: 5rem;
   padding: 20px;
@@ -54,15 +54,16 @@ const CompanyInfo = () => {
         />
       </CompanyImagesContainer>
       <CompanyInfoContent>
-        Henan Dongdong Automobile Service Co., Ltd. ddongauto.com is subordinate to Henan Dongdong
-        Automobile Service Co., Ltd, which was founded in 2016 and is located in Zhengzhou, Henan
-        Province, China, with a registered capital of 30.5 million yuan.
+        Henan Dongdong Automobile Service Co., Ltd. ddongauto.com is subordinate
+        to Henan Dongdong Automobile Service Co., Ltd, which was founded in 2016
+        and is located in Zhengzhou, Henan Province, China, with a registered
+        capital of 30.5 million yuan.
         <br />
         <br />
-        Henan Dongdong Auto Service Co., Ltd. with 8 years of export experience is a leading
-        electric vehicle wholesaler, distributor, and dealer in China, and is authorized by the
-        Chinese government to promote and sell vehicles such as electric cars and used cars all over
-        the world.
+        Henan Dongdong Auto Service Co., Ltd. with 8 years of export experience
+        is a leading electric vehicle wholesaler, distributor, and dealer in
+        China, and is authorized by the Chinese government to promote and sell
+        vehicles such as electric cars and used cars all over the world.
       </CompanyInfoContent>
       {/* Add more content and images as needed */}
     </CompanyInfoContainer>

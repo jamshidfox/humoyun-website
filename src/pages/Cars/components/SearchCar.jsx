@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const CarSearchContainer = styled.div`
   padding: 20px;
@@ -17,7 +17,6 @@ const SearchImage = styled.img`
   max-height: 400px; /* Adjust the max-height as needed for a larger image */
   object-fit: cover;
   border-radius: 8px;
-  border: 2px solid #3498db; /* Blue border color */
   margin-bottom: 20px;
 `;
 

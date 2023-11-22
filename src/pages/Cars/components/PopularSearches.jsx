@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { ChevronDown, ChevronUp } from 'react-feather';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { ChevronDown, ChevronUp } from "react-feather";
 
 const PopularSearchesContainer = styled.div`
   margin: 3rem 0rem;
-  padding: 3rem 30rem;
+  padding: 3rem 3rem;
   background-color: #f0f0f0; /* Light gray background */
 `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
   color: #333;
   margin-bottom: 20px;
 `;
@@ -41,7 +45,7 @@ const SearchItem = styled.li`
 `;
 
 const CollapseContent = styled.div`
-  display: ${(props) => (props.isOpen ? 'block' : 'none')};
+  display: ${(props) => (props.isOpen ? "block" : "none")};
 `;
 
 const PopularSearches = () => {
@@ -60,7 +64,9 @@ const PopularSearches = () => {
       <CategoryContainer>
         <CategoryTitle onClick={() => setCarBrandsOpen(!isCarBrandsOpen)}>
           Car Brands
-          <IconContainer>{isCarBrandsOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isCarBrandsOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isCarBrandsOpen}>
           <SearchList>
@@ -82,9 +88,13 @@ const PopularSearches = () => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <CategoryTitle onClick={() => setCarBodyStylesOpen(!isCarBodyStylesOpen)}>
+        <CategoryTitle
+          onClick={() => setCarBodyStylesOpen(!isCarBodyStylesOpen)}
+        >
           Car Body Styles
-          <IconContainer>{isCarBodyStylesOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isCarBodyStylesOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isCarBodyStylesOpen}>
           <SearchList>
@@ -113,9 +123,13 @@ const PopularSearches = () => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <CategoryTitle onClick={() => setUsedCarsByPriceOpen(!isUsedCarsByPriceOpen)}>
+        <CategoryTitle
+          onClick={() => setUsedCarsByPriceOpen(!isUsedCarsByPriceOpen)}
+        >
           Used Cars by Price
-          <IconContainer>{isUsedCarsByPriceOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isUsedCarsByPriceOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isUsedCarsByPriceOpen}>
           <SearchList>
@@ -135,7 +149,9 @@ const PopularSearches = () => {
       <CategoryContainer>
         <CategoryTitle onClick={() => setCarsByCityOpen(!isCarsByCityOpen)}>
           Cars by Popular City
-          <IconContainer>{isCarsByCityOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isCarsByCityOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isCarsByCityOpen}>
           <SearchList>
@@ -157,9 +173,13 @@ const PopularSearches = () => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <CategoryTitle onClick={() => setPopularNewCarsOpen(!isPopularNewCarsOpen)}>
+        <CategoryTitle
+          onClick={() => setPopularNewCarsOpen(!isPopularNewCarsOpen)}
+        >
           Popular New Cars for Sale
-          <IconContainer>{isPopularNewCarsOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isPopularNewCarsOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isPopularNewCarsOpen}>
           <SearchList>
@@ -181,9 +201,13 @@ const PopularSearches = () => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <CategoryTitle onClick={() => setPopularUsedCarsOpen(!isPopularUsedCarsOpen)}>
+        <CategoryTitle
+          onClick={() => setPopularUsedCarsOpen(!isPopularUsedCarsOpen)}
+        >
           Popular Used Cars for Sale
-          <IconContainer>{isPopularUsedCarsOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isPopularUsedCarsOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isPopularUsedCarsOpen}>
           <SearchList>
@@ -205,9 +229,13 @@ const PopularSearches = () => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <CategoryTitle onClick={() => setCarsByFuelTypeOpen(!isCarsByFuelTypeOpen)}>
+        <CategoryTitle
+          onClick={() => setCarsByFuelTypeOpen(!isCarsByFuelTypeOpen)}
+        >
           Cars by Fuel Type
-          <IconContainer>{isCarsByFuelTypeOpen ? <ChevronUp /> : <ChevronDown />}</IconContainer>
+          <IconContainer>
+            {isCarsByFuelTypeOpen ? <ChevronUp /> : <ChevronDown />}
+          </IconContainer>
         </CategoryTitle>
         <CollapseContent isOpen={isCarsByFuelTypeOpen}>
           <SearchList>

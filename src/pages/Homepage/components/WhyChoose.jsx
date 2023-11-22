@@ -1,11 +1,12 @@
 // WhyChooseUs.js
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const WhyChooseUsContainer = styled.div`
   text-align: center;
   padding: 40px 20px;
   background-color: #f0f0f0;
+  border-radius: 14px;
 `;
 
 const SectionTitle = styled.h2`
@@ -41,6 +42,8 @@ const ReasonImage = styled.img`
 
 const ReasonContent = styled.div`
   padding: 16px;
+  background-color: #a1cdf4;
+  border-radius: 8px;
 `;
 
 const ReasonTitle = styled.h3`

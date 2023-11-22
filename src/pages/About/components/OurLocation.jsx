@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const OfficeContainer = styled.div`
   display: flex;
@@ -9,6 +9,7 @@ const OfficeContainer = styled.div`
   border: 1px solid #ddd; /* Border color */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  margin: 2rem;
   margin-bottom: 3rem;
 `;
 
@@ -44,8 +45,8 @@ const Office = () => {
       <TextContainer>
         <OfficeTitle>Our Office</OfficeTitle>
         <OfficeContent>
-          Cars.com is located at 300 South Riverside, a 23-story Class A, LEED Gold Certified office
-          tower.
+          Cars.com is located at 300 South Riverside, a 23-story Class A, LEED
+          Gold Certified office tower.
           <br />
           <br />
           Cars.com
